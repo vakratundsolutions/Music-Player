@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/musicImg"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_1sdp"
+        android:backgroundTint="@color/light"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/musicallibrary"
+            android:tint="@color/lightcolor" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/musicImg"
+        android:text="File Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/filePathTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileNameTextView"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/musicImg"
+        android:text="File Path"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/more"
+        android:tint="@color/lightcolor" />
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

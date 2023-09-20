@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
-
+    tools:context=".activity.MainActivity">
 
     <FrameLayout
         android:id="@+id/f_fregment"
@@ -22,10 +21,9 @@
         android:background="@color/white"
         app:itemIconTint="@drawable/nav_item_color_state"
         app:itemTextColor="@drawable/nav_item_color_state"
-        app:itemIconSize="20dp"
+        app:itemIconSize="@dimen/_20sdp"
         app:menu="@menu/navigation"
         app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
         app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"/>
 
-
-</RelativeLayout>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

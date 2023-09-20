@@ -1,205 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Fregments.HomeFragment">
+    tools:context=".Fragment.HomeFragment">
 
-    <RelativeLayout
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
         android:id="@+id/topnav"
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="@dimen/_60sdp">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_height="@dimen/_20sdp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/_15sdp"
             android:src="@drawable/menu"
-            app:tint="@color/lightcolor"></ImageView>
+            app:tint="@color/lightcolor" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:fontFamily="@font/robotomedium"
             android:text="@string/home"
             android:textColor="@color/black"
-            android:textSize="20dp"></TextView>
+            android:textSize="@dimen/_20sdp" />
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="15dp"
-            android:src="@drawable/search"
-            app:tint="@color/lightcolor"></ImageView>
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
 
-
-    </RelativeLayout>
-
-    <RelativeLayout
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/topnav"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <com.google.android.material.circularreveal.CircularRevealLinearLayout
             android:id="@+id/ll_1"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="@dimen/_45sdp"
             android:weightSum="2">
 
-            <RelativeLayout
+            <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                android:id="@+id/btnRecent"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_12sdp"
                 android:layout_weight="1"
                 android:background="@drawable/shap_1"
                 android:backgroundTint="@color/color_2"
-                android:layout_marginRight="12dp"
                 android:gravity="center">
 
-                <ImageView
+                <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/img_recent"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:src="@drawable/recent"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
                     android:layout_centerVertical="true"
-                    app:tint="@color/color_2_2">
-                </ImageView>
+                    android:src="@drawable/recent"
+                    app:tint="@color/color_2_2" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_toRightOf="@id/img_recent"
+                    android:fontFamily="@font/robotomedium"
                     android:text="Recent"
                     android:textColor="@color/color_2_2"
-                    android:fontFamily="@font/robotomedium"
-                    android:textSize="15dp"
-                    android:layout_toRightOf="@id/img_recent"
-                    android:layout_marginLeft="15dp"
-                    android:layout_centerVertical="true">
-                </TextView>
+                    android:textSize="@dimen/_15sdp" />
 
-            </RelativeLayout>
+            </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
 
-            <RelativeLayout
+            <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                android:id="@+id/btnFavourite"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_12sdp"
                 android:layout_weight="1"
                 android:background="@drawable/shap_1"
                 android:backgroundTint="@color/color_1"
-                android:layout_marginLeft="12dp"
                 android:gravity="center">
 
-                <ImageView
+                <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/img_Favorite"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:src="@drawable/like"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
                     android:layout_centerVertical="true"
-                    app:tint="@color/color_1_2">
-                </ImageView>
+                    android:src="@drawable/like"
+                    app:tint="@color/color_1_2" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_toRightOf="@id/img_Favorite"
+                    android:fontFamily="@font/robotomedium"
                     android:text="@string/favorites"
                     android:textColor="@color/color_1_2"
-                    android:fontFamily="@font/robotomedium"
-                    android:textSize="15dp"
-                    android:layout_toRightOf="@id/img_Favorite"
-                    android:layout_marginLeft="15dp"
-                    android:layout_centerVertical="true">
-                </TextView>
+                    android:textSize="@dimen/_15sdp" />
 
+            </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
 
-            </RelativeLayout>
+        </com.google.android.material.circularreveal.CircularRevealLinearLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
+        <com.google.android.material.circularreveal.CircularRevealLinearLayout
             android:id="@+id/ll_2"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:weightSum="2"
+            android:layout_height="@dimen/_45sdp"
             android:layout_below="@id/ll_1"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="@dimen/_15sdp"
+            android:weightSum="2">
 
-            <RelativeLayout
+            <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                android:id="@+id/btnExplore"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_12sdp"
                 android:layout_weight="1"
                 android:background="@drawable/shap_1"
                 android:backgroundTint="@color/color_3"
-                android:layout_marginRight="12dp"
                 android:gravity="center">
 
-                <ImageView
+                <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/img_expore"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:src="@drawable/explore"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
                     android:layout_centerVertical="true"
-                    app:tint="@color/color_3_3">
-                </ImageView>
+                    android:src="@drawable/explore"
+                    app:tint="@color/color_3_3" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_toRightOf="@id/img_expore"
+                    android:fontFamily="@font/robotomedium"
                     android:text="@string/explore"
                     android:textColor="@color/color_3_3"
-                    android:fontFamily="@font/robotomedium"
-                    android:textSize="15dp"
-                    android:layout_toRightOf="@id/img_expore"
-                    android:layout_marginLeft="15dp"
-                    android:layout_centerVertical="true">
-                </TextView>
+                    android:textSize="@dimen/_15sdp" />
 
-            </RelativeLayout>
+            </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
 
-            <RelativeLayout
+            <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                android:id="@+id/btnRingtone"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="12dp"
+                android:layout_marginLeft="@dimen/_12sdp"
                 android:layout_marginBottom="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/shap_1"
                 android:backgroundTint="@color/color_4"
                 android:gravity="center">
 
-                <ImageView
+                <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/img_Ringtone"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
                     android:layout_centerVertical="true"
                     android:src="@drawable/musicallibrary"
-                    app:tint="@color/color_4_4"></ImageView>
+                    app:tint="@color/color_4_4" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/_15sdp"
                     android:layout_toRightOf="@id/img_Ringtone"
                     android:fontFamily="@font/robotomedium"
                     android:text="@string/ringtone"
                     android:textColor="@color/color_4_4"
-                    android:textSize="15dp"></TextView>
+                    android:textSize="@dimen/_15sdp" />
 
+            </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
 
-            </RelativeLayout>
+        </com.google.android.material.circularreveal.CircularRevealLinearLayout>
 
-        </LinearLayout>
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
 
-
-
-    </RelativeLayout>
-
-
-</RelativeLayout>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

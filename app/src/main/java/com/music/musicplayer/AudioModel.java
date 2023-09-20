@@ -1,49 +1,35 @@
 package com.music.musicplayer;
 
-import java.io.Serializable;
+public class AudioModel {
 
-public class AudioModel implements Serializable {
+    String aPath;
+    String aName;
+    String aAlbum;
+    String aArtist;
 
-    private String path;
-    private String duration;
-    private String name;
-    private String artist;
-    private byte[] art;
-
-    public AudioModel(String path, String duration, String name, String artist, byte[] art) {
-        this.path = path;
-        this.duration = duration;
-        this.name = name;
-        this.artist = artist;;
-        this.art = art;
+    public String getaPath() {
+        return aPath;
     }
-
-    public AudioModel(String path, String duration, String name, String artist) {
-        this.path = path;
-        this.duration = duration;
-        this.name = name;
-        this.artist = artist;
-        this.art = null;
+    public void setaPath(String aPath) {
+        this.aPath = aPath;
     }
-
-    public String getPath() {
-        return path;
+    public String getaName() {
+        return aName;
     }
-
-    public String getDuration() {
-        return duration;
+    public void setaName(String aName) {
+        this.aName = aName;
     }
-
-    public String getName() {
-        return name;
+    public String getaAlbum() {
+        return aAlbum;
     }
-
-    public String getArtist() {
-        return artist;
+    public void setaAlbum(String aAlbum) {
+        this.aAlbum = aAlbum;
     }
-
-    public byte[] getArt() {
-        return art;
+    public String getaArtist() {
+        return aArtist;
+    }
+    public void setaArtist(String aArtist) {
+        this.aArtist = aArtist;
     }
 
 }

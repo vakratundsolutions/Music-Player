@@ -3,12 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fregments.PlaylistFragment">
+    tools:context=".Fragment.PlaylistFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="PlayList"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp" />
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
 
 </FrameLayout>
